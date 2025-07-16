@@ -3,7 +3,7 @@ from textnode import TextNode, TextType
 
 
 def main():
-    bold = TextNode("bold text", TextType.BOLD_TEXT)
+    bold = TextNode("bold text", TextType.BOLD)
 
     print(bold)
 
