@@ -27,6 +27,17 @@ def split_notes_delimiter(old_nodes, delimiter, text_type):
         result_nodes.extend(split_nodes)
     return result_nodes
 
+def split_nodes_link(old_nodes):
+    # 1. extract links from the node text
+    # 2. foreach all extracted links
+    #   3. split the text by the extracted links text (maxsplit=1)
+    #   4. add section[0]
+    #   5. add the link node with the information in it
+    #   6. add section[1] 
+    #      (there are only 2 sections since we splitted once)
+    # if we went trough just extend the result go for the next old_node
+    # return result
+
 
 def extract_markdown_images(text):
     matches = re.findall(r"!\[([^\[\]]*)\]\(([^\(\)]*)\)", text)
